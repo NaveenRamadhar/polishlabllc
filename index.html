@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="POLISH LAB — Premium mobile detailing. Interior, exterior, and full detail packages. Book instantly online."
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>POLISH LAB | Premium Mobile Detailing</title>
+
+    <link rel="preconnect" href="https://square.site" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- Skip Link -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="POLISH LAB Home">
+          <img
+            class="brand__logo"
+            src="polishlabtransparentlogo.png"
+            alt="POLISH LAB logo"
+          />
+          <div class="brand__text">
+            <span class="brand__name">POLISH LAB</span>
+            <span class="brand__tagline">Premium Mobile Detailing</span>
+          </div>
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="nav__toggleLine"></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+
+          <ul class="nav__menu" id="navMenu">
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#gift-cards" class="nav__link">Gift Cards</a></li>
+            <!-- <li><a href="#gallery" class="nav__link">Gallery</a></li> -->
+            <!-- <li><a href="#reviews" class="nav__link">Reviews</a></li> -->
+            <li><a href="#faq" class="nav__link">FAQ</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+            <li class="nav__cta">
+              <a href="#booking" class="btn btn--nav">Book Now</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="kicker">Mobile Detailing • Orlando & Surrounding Areas</p>
+            <h1 class="hero__title">
+              A Cleaner Car,
+              <span class="text-outline">Without Leaving Home.</span>
+            </h1>
+            <p class="hero__subtitle">
+              POLISH LAB delivers a premium, repeatable detailing
+              experience—clean, protected, and refined. Simple booking,
+              transparent packages, and professional results.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Start Your Quote</a>
+              <a class="btn btn--ghost" href="#services">View Services</a>
+            </div>
+
+            <div class="trust">
+              <div class="trust trust--links" aria-label="Explore Polish Lab">
+                <a class="trust__item" href="about.html">
+                  <span class="trust__value">→</span>
+                  <span class="trust__label">Get to Know Us</span>
+                </a>
+
+                <a class="trust__item" href="our_process.html">
+                  <span class="trust__value">→</span>
+                  <span class="trust__label">Our Process</span>
+                </a>
+
+                <a class="trust__item" href="advantages.html">
+                  <span class="trust__value">→</span>
+                  <span class="trust__label">Mobile Detailing Advantages</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__card">
+            <div class="heroCard">
+              <div class="heroCard__top">
+                <p class="heroCard__label">Soonest Availability</p>
+                <p class="heroCard__value" id="nextAvailable">Today</p>
+              </div>
+              <div class="heroCard__body">
+                <p class="heroCard__title">Book in less than 60 seconds!</p>
+                <p class="heroCard__desc">
+                  Choose a package, pick a time, and you’re locked in.
+                </p>
+                <a class="btn btn--primary btn--full" href="#booking"
+                  >Book Now</a
+                >
+                <p class="heroCard__fineprint">
+                  Confirmation sent via email/text.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__bg" aria-hidden="true"></div>
+      </section>
+
+      <!-- Services -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Services</h2>
+            <p class="section__subtitle">
+              Choose your level — Refresh for upkeep, Premium for deeper
+              results.
+            </p>
+          </div>
+
+          <div class="svcGrid">
+            <!-- Full Detail -->
+            <article class="svcCard">
+              <div class="svcCard__head">
+                <h3 class="svcCard__title">Full Detail</h3>
+                <p class="svcCard__sub">Inside + outside for maximum impact.</p>
+              </div>
+
+              <div class="svcTier">
+                <div class="svcTier__top">
+                  <span class="svcTier__name">Full Refresh Detail</span>
+                  <span class="svcTier__tag">Refresh</span>
+                </div>
+                <p class="svcTier__desc">
+                  A complete clean-up for regularly maintained vehicles.
+                </p>
+              </div>
+
+              <div class="svcTier svcTier--premium">
+                <div class="svcTier__top">
+                  <span class="svcTier__name">Full Reset Detail</span>
+                  <span class="svcTier__tag svcTier__tag--dark">Premium</span>
+                </div>
+                <p class="svcTier__desc">
+                  A deeper reset designed to restore your vehicle inside & out.
+                </p>
+              </div>
+
+              <a class="svcCard__cta" href="#booking">Book Full Detail →</a>
+            </article>
+
+            <!-- Exterior -->
+            <article class="svcCard">
+              <div class="svcCard__head">
+                <h3 class="svcCard__title">Exterior Detail</h3>
+                <p class="svcCard__sub">
+                  Safe wash + refinement, wrap-friendly options.
+                </p>
+              </div>
+
+              <div class="svcTier">
+                <div class="svcTier__top">
+                  <span class="svcTier__name">Exterior Refresh Detail</span>
+                  <span class="svcTier__tag">Refresh</span>
+                </div>
+                <p class="svcTier__desc">
+                  Maintenance-focused exterior clean for consistent shine.
+                </p>
+              </div>
+
+              <div class="svcTier svcTier--premium">
+                <div class="svcTier__top">
+                  <span class="svcTier__name">Exterior Advanced Detail</span>
+                  <span class="svcTier__tag svcTier__tag--dark">Premium</span>
+                </div>
+                <p class="svcTier__desc">
+                  Deeper exterior care for vehicles needing extra attention.
+                </p>
+              </div>
+
+              <a class="svcCard__cta" href="#booking">Book Exterior →</a>
+            </article>
+
+            <!-- Interior -->
+            <article class="svcCard">
+              <div class="svcCard__head">
+                <h3 class="svcCard__title">Interior Detail</h3>
+                <p class="svcCard__sub">
+                  Comfort, hygiene, and a refined cabin feel.
+                </p>
+              </div>
+
+              <div class="svcTier">
+                <div class="svcTier__top">
+                  <span class="svcTier__name">Interior Refresh Detail</span>
+                  <span class="svcTier__tag">Refresh</span>
+                </div>
+                <p class="svcTier__desc">
+                  A thorough clean for everyday upkeep and freshness.
+                </p>
+              </div>
+
+              <div class="svcTier svcTier--premium">
+                <div class="svcTier__top">
+                  <span class="svcTier__name">Interior Restoration Detail</span>
+                  <span class="svcTier__tag svcTier__tag--dark">Premium</span>
+                </div>
+                <p class="svcTier__desc">
+                  Targets heavier soil, stains, pet hair, and embedded debris.
+                </p>
+              </div>
+
+              <a class="svcCard__cta" href="#booking">Book Interior →</a>
+            </article>
+
+            <!-- Maintenance -->
+            <article class="svcCard svcCard--wide">
+              <div class="svcCard__head">
+                <h3 class="svcCard__title">Signature Maintenance</h3>
+                <p class="svcCard__sub">
+                  For existing POLISH LAB clients — keep it perfect between
+                  details.
+                </p>
+              </div>
+
+              <div class="svcTier svcTier--signature">
+                <div class="svcTier__top">
+                  <span class="svcTier__name"
+                    >Signature Maintenance Detail</span
+                  >
+                  <span class="svcTier__tag svcTier__tag--dark">Clients</span>
+                </div>
+                <p class="svcTier__desc">
+                  A premium upkeep service for vehicles we’ve already detailed.
+                </p>
+              </div>
+
+              <a class="svcCard__cta" href="#booking">Book Maintenance →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Most Popular -->
+      <section class="section section--alt" id="packages">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Most Popular</h2>
+            <p class="section__subtitle">
+              The services clients book most often — simple choices, premium
+              results.
+            </p>
+          </div>
+
+          <div class="pricing">
+            <!-- Featured -->
+            <article class="priceCard priceCard--featured">
+              <div class="priceCard__badge">Best Seller</div>
+
+              <h3 class="priceCard__title">Full Reset Detail</h3>
+              <p class="priceCard__desc">
+                The complete POLISH LAB transformation — deep clean and refined
+                finish inside & out.
+              </p>
+
+              <ul class="list list--compact">
+                <li>Deep interior reset & disinfection</li>
+                <li>Exterior wash + enhanced refinement</li>
+                <li>Glass, jambs & finishing touches</li>
+              </ul>
+
+              <div class="pkgCta">
+                <a class="btn btn--primary btn--full" href="#booking">
+                  Book Full Reset
+                </a>
+                <p class="pkgFineprint">
+                  Final pricing confirmed in Square based on size & condition.
+                </p>
+              </div>
+            </article>
+
+            <!-- Interior Restoration -->
+            <article class="priceCard">
+              <h3 class="priceCard__title">Interior Restoration Detail</h3>
+              <p class="priceCard__desc">
+                Designed for heavy soil, stains, pet hair, and embedded debris —
+                restore cabin comfort.
+              </p>
+
+              <ul class="list list--compact">
+                <li>Deep vacuum + crevice work</li>
+                <li>Stain & build-up treatment</li>
+                <li>Plastics protected + glass cleaned</li>
+              </ul>
+
+              <div class="pkgCta">
+                <a class="btn btn--primary btn--full" href="#booking">
+                  Book Interior Restoration
+                </a>
+                <p class="pkgFineprint">Add-ons available during booking.</p>
+              </div>
+            </article>
+
+            <!-- Signature Maintenance -->
+            <article class="priceCard">
+              <h3 class="priceCard__title">Signature Maintenance Detail</h3>
+              <p class="priceCard__desc">
+                Exclusive upkeep for existing POLISH LAB clients — keep your
+                vehicle dialed in between details.
+              </p>
+
+              <ul class="list list--compact">
+                <li>Maintenance clean inside & out</li>
+                <li>Light touch-ups & finishing</li>
+                <li>Priority scheduling when available</li>
+              </ul>
+
+              <div class="pkgCta">
+                <a class="btn btn--primary btn--full" href="#booking">
+                  Book Maintenance
+                </a>
+                <p class="pkgFineprint">
+                  Available for returning clients only.
+                </p>
+              </div>
+            </article>
+          </div>
+          <!--
+          <div class="note">
+            <p>
+              <strong>Wrapped or satin vehicles?</strong> Select wrap-safe care
+              during booking so products and technique are matched correctly.
+            </p>
+          </div>
+          -->
+        </div>
+      </section>
+
+      <!-- Booking -->
+      <section class="section" id="booking">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Book Online</h2>
+            <p class="section__subtitle">
+              Choose a service, pick a time, confirm.
+            </p>
+          </div>
+
+          <div class="booking">
+            <div class="booking__left">
+              <div class="card card--soft">
+                <h3 class="card__title">What to expect</h3>
+                <ul class="list">
+                  <li>Confirmation via email/text</li>
+                  <li>We arrive on-site at your scheduled time</li>
+                  <li>Professional equipment + premium products</li>
+                  <li>Fast, consistent, and high-quality finishes</li>
+                </ul>
+
+                <div class="divider"></div>
+
+                <h3 class="card__title">Before we arrive</h3>
+                <ul class="list">
+                  <li>Ensure keys are available (or contactless handoff)</li>
+                  <li>Provide access to the vehicle and working area</li>
+                  <li>Remove personal valuables if preferred</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="booking__right">
+              <div class="squareWidgetWrap" aria-label="Square booking widget">
+                <!-- Square Appointments Embed -->
+                <!-- Start Square Appointments Embed Code -->
+                <script src="https://square.site/appointments/buyer/widget/rlv0rnjqiiqgdj/L0VBB9X74ZW7B.js"></script>
+                <!-- End Square Appointments Embed Code -->
+                <noscript>
+                  <div class="noscript">
+                    JavaScript is required to load the booking widget.
+                  </div>
+                </noscript>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gift Cards -->
+      <section class="section section--alt" id="gift-cards">
+        <div class="container">
+          <div class="giftGrid">
+            <div class="giftContent">
+              <h2 class="section__title">E-Gift Cards</h2>
+              <p class="section__subtitle">
+                Give the gift of a professionally detailed vehicle — perfect for
+                birthdays, holidays, new car owners, or anyone who appreciates a
+                clean ride.
+              </p>
+
+              <ul class="list list--compact">
+                <li>Delivered instantly via email</li>
+                <li>Redeemable for any POLISH LAB service</li>
+                <li>No expiration</li>
+                <li>Perfect for luxury & daily vehicles</li>
+              </ul>
+
+              <a
+                class="btn btn--primary"
+                href="https://app.squareup.com/gift/ML5EJYE9EN1YE/order"
+                target="_blank"
+                rel="noopener"
+              >
+                Buy an E-Gift Card
+              </a>
+            </div>
+
+            <div class="giftCard">
+              <div class="giftCard__shine"></div>
+              <img
+                src="polishlabtransparentlogo.png"
+                alt="POLISH LAB Gift Card"
+                class="giftCard__logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+<section class="section section--alt" id="gallery">
+  ...
+</section>
+-->
+
+      <!--
+<section class="section" id="reviews">
+  ...
+</section>
+-->
+
+      <!-- FAQ -->
+      <section class="section section--alt" id="faq">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">FAQ</h2>
+            <p class="section__subtitle">
+              Everything you need to know before booking with POLISH LAB.
+            </p>
+          </div>
+
+          <div class="faq">
+            <details class="faq__item">
+              <summary class="faq__q">What is mobile detailing?</summary>
+              <div class="faq__a">
+                Mobile auto detailing is a full-service, professional vehicle
+                cleaning and restoration performed at your home, office, or
+                preferred location.
+                <br /><br />
+                At <strong>POLISH LAB</strong>, we specialize in luxury mobile
+                car detailing in Orlando, FL, using
+                <strong>DI (deionized) water</strong>, premium detailing
+                products, and advanced techniques to safely clean, protect, and
+                enhance your vehicle’s finish. <br /><br />
+                You get the convenience of on-site service with the quality and
+                results of a high-end detailing studio.
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">
+                What areas do you service in Orlando, FL?
+              </summary>
+              <div class="faq__a">
+                We service Orlando and surrounding areas, including Winter Park,
+                Windermere, Lake Nona, Dr. Phillips, Winter Garden, and nearby
+                communities.
+                <br /><br />
+                If you’re unsure whether your location is within our service
+                area, feel free to contact us and we’ll be happy to confirm.
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">
+                How often should I get my car detailed?
+              </summary>
+              <div class="faq__a">
+                For luxury, exotic, or performance vehicles, we recommend a
+                <strong>maintenance detail every 2–4 weeks</strong> to preserve
+                a flawless finish and protect your paint from Florida’s heat, UV
+                exposure, and environmental fallout. <br /><br />
+                Regular detailing helps prevent oxidation, water spots, and
+                swirl marks, keeping gloss and protection levels consistent
+                year-round.
+                <br /><br />
+                Our
+                <strong>Signature Maintenance Detailing Program</strong> offers
+                discounted pricing and priority scheduling for returning
+                clients.
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">
+                What’s the difference between an auto detail and a car wash?
+              </summary>
+              <div class="faq__a">
+                A traditional car wash focuses on speed and basic cleaning —
+                often using harsh chemicals and improper techniques that can
+                damage paint.
+                <br /><br />
+                Auto detailing is a precision-based cleaning and restoration
+                process. At <strong>POLISH LAB</strong>, we use hand washing,
+                paint-safe methods, and ceramic-safe products to achieve a
+                swirl-free, mirror-gloss finish. <br /><br />
+                Our detailing protects your vehicle’s paint, wheels, and
+                interior at a level no standard car wash can match.
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">
+                Do I need to provide water or power?
+              </summary>
+              <div class="faq__a">
+                No — <strong>POLISH LAB is completely self-sufficient</strong>.
+                <br /><br />
+                Our mobile detailing van is equipped with deionized water, a
+                professional generator, and all necessary high-end equipment to
+                complete your service anywhere in Orlando, FL.
+                <br /><br />
+                You don’t need to provide anything — just access to the vehicle
+                and the keys.
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">
+                How long does a mobile detail appointment take?
+              </summary>
+              <div class="faq__a">
+                Appointment times vary based on the service selected, vehicle
+                size, and overall condition.
+                <br /><br />
+                Most services take between <strong>1 to 4 hours</strong>. Larger
+                vehicles or deeper restoration services may require additional
+                time. <br /><br />
+                Your booking confirmation will include an estimated service
+                window.
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__q">
+                How do I book an appointment with POLISH LAB?
+              </summary>
+              <div class="faq__a">
+                Booking is easy.
+                <br /><br />
+                Simply use our online booking system or contact us directly to
+                schedule your mobile detailing service.
+                <br /><br />
+                We’ll confirm your location, vehicle, and selected service. Our
+                team arrives fully equipped and ready to deliver
+                <strong
+                  >Orlando’s most premium mobile detailing experience</strong
+                >.
+              </div>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">
+                Do you offer maintenance for returning clients?
+              </summary>
+              <div class="faq__a">
+                Yes — the <strong>Signature Maintenance Detail</strong> is
+                designed exclusively for returning POLISH LAB clients. It keeps
+                your vehicle consistently clean and protected between deeper
+                services, with discounted pricing and priority scheduling when
+                available.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contactPro">
+            <div class="contactPro__left">
+              <h2 class="section__title">Contact</h2>
+              <p class="section__subtitle">
+                Questions before booking? Reach out — we’ll respond quickly.
+              </p>
+
+              <div class="contactActions">
+                <!-- Replace the phone + email with your real info -->
+                <a class="btn btn--primary" href="tel:+14079125365">Call Now</a>
+                <a class="btn btn--ghost" href="sms:+14079125365">Text Us</a>
+                <a
+                  class="btn btn--ghost"
+                  href="https://instagram.com/polishlabllc"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                >
+              </div>
+
+              <div class="contactGrid">
+                <div class="infoCard">
+                  <p class="infoCard__label">Hours</p>
+                  <p class="infoCard__value">Mon–Sun • 6am–10pm</p>
+                  <p class="infoCard__note">
+                    Appointments outside these hours may be available upon
+                    request.
+                  </p>
+                </div>
+
+                <div class="infoCard">
+                  <p class="infoCard__label">Service Area</p>
+                  <p class="infoCard__value">Orlando + nearby</p>
+                  <p class="infoCard__note">
+                    Winter Park • Windermere • Lake Nona • Dr. Phillips • Winter
+                    Garden
+                  </p>
+                </div>
+
+                <div class="infoCard hide-mobile">
+                  <p class="infoCard__label">Email</p>
+                  <p class="infoCard__value">
+                    <a class="contactLink" href="mailto:polishlabllc@gmail.com"
+                      >polishlabllc@gmail.com</a
+                    >
+                  </p>
+                  <p class="infoCard__note">
+                    Best for quotes & special requests
+                  </p>
+                </div>
+
+                <div class="infoCard hide-mobile">
+                  <p class="infoCard__label">Response Time</p>
+                  <p class="infoCard__value">Same day</p>
+                  <p class="infoCard__note">Typically within a few hours</p>
+                </div>
+              </div>
+
+              <div class="contactMini hide-mobile">
+                <p>
+                  Prefer booking instantly? Use the
+                  <a class="contactLink" href="#booking">booking</a>
+                  section.
+                </p>
+              </div>
+            </div>
+
+            <form class="contactPro__form" id="contactForm" novalidate>
+              <div class="formHead">
+                <h3 class="formHead__title">Send a message</h3>
+                <p class="formHead__sub">
+                  Tell us your vehicle + location and we’ll point you to the
+                  right service.
+                </p>
+              </div>
+
+              <div class="field">
+                <label for="name">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                />
+                <small class="error" data-error-for="name"></small>
+              </div>
+
+              <div class="fieldRow">
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    placeholder="(407) 555-1234"
+                    autocomplete="tel"
+                    required
+                  />
+                  <small class="error" data-error-for="phone"></small>
+                </div>
+
+                <div class="field">
+                  <label for="vehicle">Vehicle</label>
+                  <input
+                    id="vehicle"
+                    name="vehicle"
+                    type="text"
+                    placeholder="e.g., Mercedes C300, 2022"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+
+              <div class="fieldRow">
+                <div class="field">
+                  <label for="location">Location</label>
+                  <input
+                    id="location"
+                    name="location"
+                    type="text"
+                    placeholder="Neighborhood / City"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="field">
+                  <label for="service">Service</label>
+                  <select id="service" name="service">
+                    <option value="">Select a service</option>
+                    <option>Full Refresh Detail</option>
+                    <option>Full Reset Detail</option>
+                    <option>Exterior Refresh Detail</option>
+                    <option>Exterior Advanced Detail</option>
+                    <option>Interior Refresh Detail</option>
+                    <option>Interior Restoration Detail</option>
+                    <option>Signature Maintenance Detail</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="How can we help?"
+                  required
+                ></textarea>
+                <small class="error" data-error-for="message"></small>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full">
+                Send Message
+              </button>
+
+              <p
+                class="formNote"
+                id="formNote"
+                role="status"
+                aria-live="polite"
+              ></p>
+
+              <p class="formFineprint">
+                By submitting, you agree to receive a reply via call/text/email.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img
+            class="footer__logo"
+            src="polishlabtransparentlogo.png"
+            alt="POLISH LAB logo"
+          />
+          <div>
+            <p class="footer__name">POLISH LAB</p>
+            <p class="footer__copy">We bring the lab to you.</p>
+          </div>
+        </div>
+
+        <div class="footer__cols">
+          <div class="footerCol">
+            <p class="footerCol__title">Quick Links</p>
+            <div class="footerCol__links">
+              <a href="#booking">Book</a>
+              <a href="#services">Services</a>
+              <a href="#packages">Most Popular</a>
+              <a href="#faq">FAQ</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+
+          <div class="footerCol">
+            <p class="footerCol__title">Gift Cards</p>
+            <div class="footerCol__links">
+              <a
+                href="https://app.squareup.com/gift/ML5EJYE9EN1YE/order"
+                target="_blank"
+                rel="noopener"
+                >Buy an E-Gift Card</a
+              >
+              <a href="#gift-cards">Gift Card Info</a>
+            </div>
+          </div>
+
+          <div class="footerCol">
+            <p class="footerCol__title">Contact</p>
+            <div class="footerCol__links">
+              <!-- Replace phone/email if needed -->
+              <a href="tel:+14079125365">Call: (407) 912-5365</a>
+              <a href="sms:+14079125365">Text: (407) 912-5365</a>
+              <a href="mailto:polishlabllc@gmail.com">polishlabllc@gmail.com</a>
+              <a
+                href="https://instagram.com/polishlabllc"
+                target="_blank"
+                rel="noopener"
+                >Instagram: @polishlabllc</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bar">
+          <p class="footer__fineprint">
+            © <span id="year"></span> POLISH LAB. Orlando, FL • Mon–Sun 6am–10pm
+            • Studio-quality mobile detailing.
+          </p>
+          <a class="footer__book hide-mobile" href="#booking">Book Now →</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky booking button (mobile-friendly) -->
+    <div class="stickyBook" id="stickyBook">
+      <a class="btn btn--primary btn--full" href="#booking">Book Now</a>
+    </div>
+
+    <!-- Lightbox modal (for gallery placeholders) -->
+    <div
+      class="modal"
+      id="lightbox"
+      aria-hidden="true"
+      role="dialog"
+      aria-label="Gallery lightbox"
+    >
+      <div class="modal__backdrop" data-close="true"></div>
+      <div class="modal__panel" role="document">
+        <button
+          class="modal__close"
+          type="button"
+          aria-label="Close"
+          data-close="true"
+        >
+          ✕
+        </button>
+        <div class="modal__content" id="lightboxContent">
+          <p class="modal__title">Gallery</p>
+          <p class="modal__text">
+            Replace placeholders with your real photos for the full effect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
