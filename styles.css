@@ -321,24 +321,42 @@ button {
   align-items: center;
   padding: 10px 12px;
   border-radius: 999px;
-  background: var(--soft);
-  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(10px);
+
   font-size: 13px;
+  text-decoration: none;
+
+  transition: transform 180ms ease, box-shadow 180ms ease,
+    border-color 180ms ease;
 }
+
+.trust__item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.11);
+}
+
 .trust__value {
   width: 22px;
   height: 22px;
   border-radius: 999px;
-  background: #000;
-  color: #fff;
   display: grid;
   place-items: center;
   font-size: 12px;
-}
-.trust__label {
-  color: var(--muted);
+
+  background: #000;
+  color: #fff;
 }
 
+.trust__label {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Link-style trust variant (your current markup uses trust--links) */
 .trust--links .trust__item {
   cursor: pointer;
 }
@@ -346,7 +364,7 @@ button {
 .trust--links .trust__value {
   background: transparent;
   color: #000;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.14);
 }
 
 .trust--links .trust__item:hover .trust__value {
