@@ -64,25 +64,6 @@
   }
 
   /* =========================
-     Next Available Text
-  ========================= */
-  const nextAvailable = document.querySelector("#nextAvailable");
-
-  if (nextAvailable) {
-    const now = new Date();
-    const hour = now.getHours();
-    const day = now.getDay(); // 0 Sun – 6 Sat
-
-    if (day !== 0 && hour < 17) {
-      nextAvailable.textContent = "Today";
-    } else if (day !== 6) {
-      nextAvailable.textContent = "Tomorrow";
-    } else {
-      nextAvailable.textContent = "Next week";
-    }
-  }
-
-  /* =========================
      Reviews Slider
   ========================= */
   const track = $("#reviewTrack");
