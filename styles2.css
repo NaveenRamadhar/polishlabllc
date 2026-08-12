@@ -1569,28 +1569,6 @@ footer {
   font-size: 0.72rem;
 }
 
-@media (max-width: 768px) {
-  .gift-section {
-    padding: 90px 6%;
-  }
-
-  .gift-card-preview {
-    margin: 40px auto;
-  }
-
-  .gift-card-image {
-    max-width: 100%;
-  }
-
-  .gift-features {
-    gap: 10px;
-  }
-
-  .gift-features div {
-    font-size: 0.65rem;
-    padding: 10px 14px;
-  }
-}
 
 /* ========================= */
 /* GIFT SLIDER */
@@ -1643,13 +1621,50 @@ footer {
   background: #fff;
 }
 
+
 @media (max-width: 768px) {
+  .gift-section {
+    padding: 72px 6%;
+  }
+
+  .gift-content h2 {
+    margin-bottom: 18px;
+  }
+
+  /* Paragraph → Gift Card */
+  .gift-content p {
+    margin: 0 auto 30px;
+    line-height: 1.65;
+  }
+
+  /* Gift Card → Dots */
   .gift-slider {
-    gap: 15px;
+    gap: 14px;
+    margin: 30px 0 40px;
+  }
+
+  .gift-card-preview {
+    margin: 0;
+  }
+
+  .gift-card-image {
+    max-width: 100%;
   }
 
   .gift-arrow {
     font-size: 1.6rem;
   }
+
+  /* Dots → Button */
+  .gift-dots {
+    gap: 8px;
+    margin-bottom: 50px;
+  }
+
+  .gift-dot {
+    width: 7px;
+    height: 7px;
+  }
 }
+
 
