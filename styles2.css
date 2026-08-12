@@ -1476,3 +1476,180 @@ footer {
     padding: 22px 0;
   }
 }
+
+
+/* ================================================= */
+/* GIFT EXPERIENCES */
+/* ================================================= */
+
+.gift-section {
+  padding: 120px 6%;
+  background: #050505;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.gift-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-kicker {
+  display: inline-block;
+  color: #bdbdbd;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.72rem;
+  margin-bottom: 14px;
+}
+
+.gift-content h2 {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 0.95;
+  margin-bottom: 24px;
+}
+
+.gift-content p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #9f9f9f;
+  line-height: 1.8;
+}
+
+/* ========================= */
+/* CARD IMAGE */
+/* ========================= */
+
+.gift-card-preview {
+  margin: 60px auto 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.gift-card-image {
+  width: 100%;
+  max-width: 640px;
+
+  display: block;
+
+  border-radius: 18px;
+
+  /* makes the black card stand out without looking like a box */
+  filter: drop-shadow(0 0 35px rgba(255, 255, 255, 0.05))
+    drop-shadow(0 18px 60px rgba(0, 0, 0, 0.65));
+
+  transition: opacity 0.25s ease, transform 0.35s ease, filter 0.35s ease;
+}
+
+.gift-card-image:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* ========================= */
+/* FEATURES */
+/* ========================= */
+
+.gift-features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.gift-features div {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 12px 18px;
+
+  color: #d8d8d8;
+
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 768px) {
+  .gift-section {
+    padding: 90px 6%;
+  }
+
+  .gift-card-preview {
+    margin: 40px auto;
+  }
+
+  .gift-card-image {
+    max-width: 100%;
+  }
+
+  .gift-features {
+    gap: 10px;
+  }
+
+  .gift-features div {
+    font-size: 0.65rem;
+    padding: 10px 14px;
+  }
+}
+
+/* ========================= */
+/* GIFT SLIDER */
+/* ========================= */
+
+.gift-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  margin: 60px 0 35px;
+}
+
+.gift-arrow {
+  background: none;
+  border: none;
+  color: #bdbdbd;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.gift-arrow:hover {
+  color: #fff;
+  transform: scale(1.15);
+}
+
+.gift-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 45px;
+}
+
+.gift-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #555;
+}
+
+.gift-dot.active {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .gift-slider {
+    gap: 15px;
+  }
+
+  .gift-arrow {
+    font-size: 1.6rem;
+  }
+}
+
