@@ -2439,3 +2439,766 @@ footer {
     width: 100%;
   }
 }
+
+
+/* =========================================================
+   POLISH LAB — PRIVATE EVENT LANDING PAGE
+   ========================================================= */
+
+.event-page {
+  background: #000;
+  color: #fff;
+}
+
+/* =========================================================
+     EVENT HERO
+     ========================================================= */
+
+.event-hero {
+  min-height: 100vh;
+  min-height: 100svh;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 6%;
+
+  overflow: hidden;
+  background: #000;
+}
+
+/* HERO BACKGROUND */
+
+.event-hero-background {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.32) 10%,
+      rgba(0, 0, 0, 0.55) 80%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("polishlabstudio.jpg") center center / cover no-repeat;
+
+  opacity: 0.72;
+}
+
+/* SUBTLE SIDE VIGNETTE */
+
+.event-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    transparent 35%,
+    transparent 65%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* HERO CONTENT */
+
+.event-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* EVENT NAME */
+
+.event-eyebrow {
+  margin-bottom: 42px;
+
+  color: #aaa;
+
+  font-size: 0.62rem;
+  font-weight: 400;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.event-eyebrow span {
+  display: inline-block;
+
+  margin: 0 9px;
+
+  color: #c0c0c0;
+}
+
+/* POLISH LAB */
+
+.event-hero h1 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: clamp(4.5rem, 11vw, 10rem);
+  font-weight: 500;
+
+  line-height: 0.85;
+  letter-spacing: -5px;
+
+  text-transform: uppercase;
+}
+
+/* CREATE SOMETHING WORTH LOOKING AT */
+
+.event-hero-category {
+  margin-top: 32px;
+
+  color: #c0c0c0;
+
+  font-size: 0.68rem;
+  font-weight: 400;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+/* DIVIDER */
+
+.event-hero-line {
+  width: 40px;
+  height: 1px;
+
+  margin: 30px auto;
+
+  background: rgba(192, 192, 192, 0.5);
+}
+
+/* STYLING • PROTECTION • PERFORMANCE */
+
+.event-hero-copy {
+  margin: 0;
+
+  color: #aaa;
+
+  font-size: 0.62rem;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+/* AUTOMOTIVE CUSTOMIZATION · ORLANDO */
+
+.event-hero-location {
+  margin-top: 12px;
+
+  color: #666;
+
+  font-size: 0.55rem;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+     EVENT BRAND STATEMENT
+     ========================================================= */
+
+.event-statement {
+  min-height: 720px;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 90px 6%;
+
+  overflow: hidden;
+
+  background: url("satin_black_m4.jpg") center center / cover no-repeat;
+}
+
+.event-statement-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.6) 45%,
+    rgba(0, 0, 0, 0.18) 100%
+  );
+}
+
+.event-statement-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 800px;
+}
+
+.event-statement-content > p {
+  margin-bottom: 18px;
+
+  color: #c0c0c0;
+
+  font-size: 0.68rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.event-statement-content h2 {
+  margin: 0;
+
+  font-size: clamp(3rem, 7vw, 6.5rem);
+
+  line-height: 0.92;
+
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+.event-statement-content > span {
+  display: block;
+
+  max-width: 520px;
+
+  margin-top: 25px;
+
+  color: #aaa;
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* =========================================================
+     EVENT OFFER
+     ========================================================= */
+
+.event-offer {
+  padding: 130px 6%;
+
+  background: linear-gradient(180deg, #000 0%, #050505 50%, #000 100%);
+
+  text-align: center;
+
+  border-top: 1px solid rgba(192, 192, 192, 0.12);
+  border-bottom: 1px solid rgba(192, 192, 192, 0.12);
+}
+
+.event-offer-inner {
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.event-offer-kicker {
+  display: block;
+
+  margin-bottom: 24px;
+
+  color: #c0c0c0;
+
+  font-size: 0.68rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.event-offer h2 {
+  margin: 0;
+
+  font-size: clamp(2.5rem, 5.5vw, 5rem);
+
+  line-height: 1;
+
+  letter-spacing: -1.5px;
+}
+
+.event-offer h2 span {
+  color: #c0c0c0;
+}
+
+.event-offer-inner > p {
+  max-width: 580px;
+
+  margin: 28px auto 32px;
+
+  color: #aaa;
+
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.event-offer-note {
+  display: block;
+
+  margin-top: 25px;
+
+  color: #666;
+
+  font-size: 0.58rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+     EVENT CONTACT
+     ========================================================= */
+
+.event-contact {
+  padding: 120px 6%;
+
+  background: #000;
+
+  text-align: center;
+}
+
+.event-contact-inner {
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.event-contact-kicker {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #c0c0c0;
+
+  font-size: 0.68rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.event-contact h2 {
+  margin: 0;
+
+  font-size: clamp(3rem, 6vw, 5.5rem);
+
+  line-height: 0.94;
+
+  letter-spacing: -2px;
+
+  text-transform: uppercase;
+}
+
+.event-contact-inner > p {
+  max-width: 580px;
+
+  margin: 25px auto 35px;
+
+  color: #aaa;
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.event-contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.event-location {
+  margin-top: 65px;
+  padding-top: 30px;
+
+  border-top: 1px solid rgba(192, 192, 192, 0.15);
+}
+
+.event-location p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 0.62rem;
+
+  letter-spacing: 2px;
+  line-height: 1.9;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+     EVENT FOOTER
+     ========================================================= */
+
+.event-footer {
+  padding: 60px 6% 45px;
+
+  text-align: center;
+
+  background: #050505;
+
+  border-top: 1px solid rgba(192, 192, 192, 0.12);
+}
+
+.event-footer-logo {
+  display: block;
+
+  width: 190px;
+  height: auto;
+
+  margin: 0 auto 18px;
+}
+
+.event-footer > p {
+  margin: 0;
+
+  color: #c0c0c0;
+
+  font-size: 0.6rem;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.event-footer > span {
+  display: block;
+
+  margin-top: 30px;
+
+  color: #555;
+
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+     EVENT PAGE — TABLET
+     ========================================================= */
+
+@media (max-width: 768px) {
+  /* HERO */
+
+  .event-hero {
+    padding: 70px 6%;
+  }
+
+  .event-eyebrow {
+    margin-bottom: 36px;
+
+    font-size: 0.56rem;
+    letter-spacing: 2px;
+  }
+
+  .event-hero h1 {
+    font-size: clamp(4rem, 17vw, 7rem);
+
+    letter-spacing: -3px;
+  }
+
+  .event-hero-category {
+    margin-top: 27px;
+
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+  }
+
+  .event-hero-line {
+    margin: 26px auto;
+  }
+
+  .event-hero-copy {
+    font-size: 0.56rem;
+
+    letter-spacing: 1.8px;
+  }
+
+  /* STATEMENT */
+
+  .event-statement {
+    min-height: 620px;
+
+    padding: 70px 6%;
+  }
+
+  /* OFFER */
+
+  .event-offer {
+    padding: 100px 6%;
+  }
+
+  /* CONTACT */
+
+  .event-contact {
+    padding: 100px 6%;
+  }
+}
+
+/* =========================================================
+     EVENT PAGE — MOBILE
+     ========================================================= */
+
+@media (max-width: 480px) {
+  /* HERO */
+
+  .event-hero {
+    padding: 60px 5%;
+  }
+
+  .event-hero-background {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.38) 0%,
+        rgba(0, 0, 0, 0.58) 50%,
+        rgba(0, 0, 0, 0.92) 100%
+      ),
+      url("polishlabstudio.jpg") center center / cover no-repeat;
+
+    opacity: 0.72;
+  }
+
+  .event-eyebrow {
+    margin-bottom: 34px;
+
+    font-size: 0.52rem;
+
+    letter-spacing: 1.5px;
+    line-height: 1.8;
+  }
+
+  .event-eyebrow span {
+    margin: 0 5px;
+  }
+
+  .event-hero h1 {
+    font-size: clamp(3.5rem, 18vw, 5rem);
+
+    line-height: 0.9;
+
+    letter-spacing: -2.5px;
+  }
+
+  .event-hero-category {
+    margin-top: 25px;
+
+    font-size: 0.54rem;
+
+    letter-spacing: 2.2px;
+    line-height: 1.7;
+  }
+
+  .event-hero-line {
+    width: 32px;
+
+    margin: 24px auto;
+  }
+
+  .event-hero-copy {
+    font-size: 0.54rem;
+
+    letter-spacing: 1.8px;
+    line-height: 1.7;
+  }
+
+  .event-hero-location {
+    margin-top: 10px;
+
+    font-size: 0.5rem;
+
+    letter-spacing: 1.5px;
+    line-height: 1.7;
+  }
+
+  /* STATEMENT */
+
+  .event-statement {
+    min-height: 560px;
+
+    padding: 65px 5%;
+
+    background-position: center center;
+  }
+
+  .event-statement-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.18) 0%,
+      rgba(0, 0, 0, 0.55) 45%,
+      rgba(0, 0, 0, 0.95) 100%
+    );
+  }
+
+  .event-statement-content > p {
+    font-size: 0.6rem;
+
+    letter-spacing: 2px;
+  }
+
+  .event-statement-content h2 {
+    font-size: clamp(2.7rem, 13vw, 4.2rem);
+
+    letter-spacing: -1px;
+  }
+
+  .event-statement-content > span {
+    font-size: 0.85rem;
+  }
+
+  /* OFFER */
+
+  .event-offer {
+    padding: 85px 5%;
+  }
+
+  .event-offer-kicker {
+    font-size: 0.6rem;
+
+    letter-spacing: 2px;
+  }
+
+  .event-offer h2 {
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
+
+    letter-spacing: -1px;
+  }
+
+  .event-offer-inner > p {
+    font-size: 0.88rem;
+  }
+
+  .event-offer .btn {
+    width: 100%;
+  }
+
+  /* CONTACT */
+
+  .event-contact {
+    padding: 85px 5%;
+  }
+
+  .event-contact-kicker {
+    font-size: 0.6rem;
+
+    letter-spacing: 2px;
+  }
+
+  .event-contact h2 {
+    font-size: clamp(2.7rem, 12vw, 4rem);
+
+    letter-spacing: -1px;
+  }
+
+  .event-contact-inner > p {
+    font-size: 0.88rem;
+  }
+
+  .event-contact-buttons {
+    flex-direction: column;
+  }
+
+  .event-contact-buttons .btn {
+    width: 100%;
+  }
+
+  .event-location {
+    margin-top: 55px;
+  }
+
+  .event-location p {
+    font-size: 0.56rem;
+
+    letter-spacing: 1.5px;
+  }
+
+  /* FOOTER */
+
+  .event-footer {
+    padding: 55px 5% 40px;
+  }
+
+  .event-footer-logo {
+    width: 165px;
+  }
+}
+
+/* =========================================================
+   ANIMATED DOWN ARROW
+   ========================================================= */
+
+.event-down-arrow {
+  position: absolute;
+
+  left: 50%;
+  bottom: 32px;
+
+  z-index: 3;
+
+  width: 30px;
+  height: 45px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-down-arrow span {
+  width: 30px;
+  height: 30px;
+
+  border-right: 1px solid #c0c0c0;
+  border-bottom: 1px solid #c0c0c0;
+
+  transform: rotate(45deg);
+
+  animation: eventArrowMove 2s ease-in-out infinite;
+}
+
+@keyframes eventArrowMove {
+  0% {
+    transform: translateY(-5px) rotate(45deg);
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(8px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.event-down-arrow:hover span {
+  border-color: #fff;
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .event-down-arrow {
+    bottom: 22px;
+  }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .event-down-arrow span {
+    animation: none;
+    opacity: 1;
+  }
+}
+
